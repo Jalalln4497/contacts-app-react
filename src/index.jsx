@@ -1,9 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-
-const ContactItemImg = () => {
-  return <img src="" alt="" />
-}
+import ContactApp from './components/ContactApp';
+import './style/style.css';
 
 const root = createRoot(document.querySelector('#root'));
-root.render(<Element test="Jalal"/>);
+root.render(<ContactApp />);
