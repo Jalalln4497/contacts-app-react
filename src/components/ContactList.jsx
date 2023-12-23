@@ -1,12 +1,12 @@
 import React from 'react';
 import ContactItem from './ContactItem';
 
-const ContactList = ({ contacts }) => {
+const ContactList = ({ contacts, onDelete }) => {
   return (
   <div className="contact-list">
     {
       contacts.map((contact) => (
-        <ContactItem {...contact} key={contact.id} />
+        <ContactItem {...contact} onDelete={onDelete} key={contact.id} />
       ))
     }
   </div>
